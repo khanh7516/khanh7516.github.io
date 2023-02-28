@@ -40,3 +40,12 @@ img {
   background-color: #edf1d6;
   color: #609966;
 }
+
+span {
+  background-color: #609966;
+  color: #40513b;
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-weight: 1000;
+  border-radius: 50rem;
+}
