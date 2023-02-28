@@ -1,0 +1,41 @@
+body {
+  background-color: #609966;
+}
+.main {
+  background-color: aliceblue;
+}
+fieldset {
+  border: 5px solid #609966;
+  background-color: #edf1d6;
+}
+legend {
+  color: #609966;
+}
+.product {
+  display: flex; /* Đặt ảnh và thông tin trên cùng 1 dòng */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.product img {
+  width: 300px; /* Kích thước ảnh */
+  height: 300px;
+  margin-right: 100px; /* Khoảng cách giữa ảnh và thông tin */
+}
+
+.content {
+  flex: 1; /* điều chỉnh độ rộng của nội dung linh hoạt */
+}
+
+img {
+  width: 633px;
+  height: 475px;
+  display: block;
+  margin: 0 auto;
+}
+.wrap {
+  width: 90%;
+  margin: auto;
+  border: 5px solid #40513b;
+  background-color: #edf1d6;
+  color: #609966;
+}
