@@ -46,10 +46,11 @@ span {
   color: #40513b;
   display: inline-block;
   height: 20px;
-  padding: 0.25em 0.4em;
+  padding: 10px 40px;
   font-weight: 700;
   border-radius: 50rem;
   white-space: nowrap;
+  margin-bottom: 40px;
 }
 
 .button-back {
