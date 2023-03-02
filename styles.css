@@ -49,10 +49,15 @@ span {
   padding: 10px 40px;
   font-weight: 700;
   border-radius: 20px;
-  white-space: nowrap;
   margin-bottom: 40px;
+  transition: all 0.3s;
 }
-
+span:hover {
+  background-color: #40513b;
+  color: #edf1d6;
+  box-shadow: 0.5em 0.5em 0.5em -0.5em #40513b;
+  transform: translateY(-0.25em);
+}
 .button-back {
   position: fixed;
   right: 200px;
