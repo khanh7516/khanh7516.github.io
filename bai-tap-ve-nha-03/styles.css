@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+/* div có class= "container hiển thị dưới dạng flex*/
+.container {
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
+/* tạo màu, kích thước cho các phần tử lớn nhất bài 1, bài 2 */
+.bai-1 .first,
+.bai-2 .first {
+  /* chiều rộng tối thiểu của phần tử lớn nhất bằng 75% màn hình */
+  min-width: 75%;
+  background-color: #219ebc;
+}
+/* khiến phần tử div có class = "two-blocks" tự động điều chỉnh kích thước lấp đầy phần tử cha (container) */
+.two-blocks {
+  flex-grow: 1;
+}
+/* tạo kích thước 2 khối nhỏ bài 1, bài 2 */
+.two-blocks .element {
+  width: 100%;
+  height: 200px;
+}
+
+/* bài 2 tạo khoảng cách giữa khối lớn với 2 khối còn lại 15px */
+.bai-2 .first {
+  margin-right: 15px;
+}
+
+/* tạo màu, kích thước cho các phần tử trong bài 3, bài 4 */
+.first {
+  background-color: #219ebc;
+  width: calc(100% / 3);
+  height: 400px;
+}
+.second {
+  background-color: #023047;
+  width: calc(100% / 3);
+  height: 400px;
+}
+.third {
+  background-color: #ffb703;
+  width: calc(100% / 3);
+  height: 400px;
+}
+
+/* bài 4 tạo khoảng cách giữa các khối 15px */
+.bai-4 .first,
+.bai-4 .second {
+  margin-right: 15px;
+}
