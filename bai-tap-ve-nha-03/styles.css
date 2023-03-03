@@ -12,6 +12,8 @@ body {
   display: flex;
   width: 100%;
   background-color: white;
+  justify-content: center;
+  align-items: center;
 }
 /* tạo màu, kích thước cho các phần tử lớn nhất bài 1, bài 2 */
 .bai-1 .first,
@@ -56,4 +58,16 @@ body {
 .bai-4 .first,
 .bai-4 .second {
   margin-right: 15px;
+}
+p {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
