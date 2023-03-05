@@ -102,6 +102,7 @@ section {
   object-fit: cover;
   object-position: center;
   border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem var(--text-color-2);
 }
 
 .category {
@@ -114,6 +115,7 @@ section {
   color: var(--background-color);
   background-color: var(--third-color);
   border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem var(--text-color-2);
 }
 .box {
   display: flex;
@@ -148,25 +150,6 @@ section {
   box-shadow: 0.5rem 0.5rem var(--third-color);
 }
 
-/* hover  */
-.product-box:hover {
-  background-color: var(--text-color-2);
-  transition: 0.5s;
-}
-.product-box:hover .hover-effect {
-  color: var(--background-color);
-  transition: 0.5s;
-}
-.product-box:hover .price {
-  background-color: var(--text-color);
-  transform: translate(0rem, 0rem);
-  box-shadow: 0rem 0rem var(--third-color);
-  transition: background-color 0.8s, transform 1s, box-shadow 1s;
-}
-
-.logo:hover {
-  background-color: var(--text-color-2);
-}
 .release-date {
   display: flex;
   font-size: 0.9rem;
@@ -185,4 +168,23 @@ section {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* hover  */
+.product-box:hover {
+  background-color: var(--text-color-2);
+  transition: 0.5s;
+}
+.product-box:hover .hover-effect {
+  color: var(--background-color);
+  transition: 0.5s;
+}
+.product-box:hover .price {
+  background-color: var(--text-color);
+  transform: translate(0rem, 0rem);
+  box-shadow: 0rem 0rem var(--third-color);
+  transition: background-color 0.8s, transform 1s, box-shadow 1s;
+}
+.logo:hover {
+  background-color: var(--text-color-2);
 }
