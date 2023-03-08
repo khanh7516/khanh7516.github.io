@@ -68,8 +68,7 @@ section {
   align-items: center;
 }
 
-.home {
-  color: var(--background-color);
+.home-text {
   text-align: center;
 }
 
@@ -77,6 +76,7 @@ section {
   font-size: 7rem;
   font-weight: 600;
   background-color: var(--third-color);
+  color: var(--background-color);
   padding: 1.5rem;
   border-radius: 2rem;
 }
