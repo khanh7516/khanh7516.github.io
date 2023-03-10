@@ -3,7 +3,9 @@
   --second-color: #fca311;
   --third-color: #e5e5e5;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -25,8 +27,107 @@ img {
 h1 {
   margin: 0 0 -1rem;
   font-size: 2.5rem;
-  padding: 1.5rem 0 0;
+  padding: 5rem 0 0;
 }
+ul li {
+  list-style-type: none;
+}
+/* header  */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 4rem;
+  background-color: var(--first-color);
+  border-bottom: 0.2rem solid var(--second-color);
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  margin: 0 1rem;
+}
+.navbar a {
+  display: block;
+  height: 100%;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+.navbar a:hover {
+  color: var(--second-color);
+  border-bottom: 0.1rem solid var(--second-color);
+}
+.logo1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 3.5rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+.sigres {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.3rem;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: white;
+  background: var(--second-color);
+  height: 100%;
+  width: auto;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  transform: translate(-0.2rem, -0.2rem);
+  box-shadow: 0.2rem 0.2rem var(--third-color);
+  transition: 0.3s;
+}
+.register {
+  color: var(--second-color);
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem var(--second-color);
+}
+
+.button:hover {
+  transform: translate(0rem, 0rem);
+  box-shadow: 0rem 0rem var(--third-color);
+}
+
+.menu-icon {
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  height: 0.2rem;
+  width: 100%;
+  background: white;
+}
+
 /* main  */
 .main {
   width: 100%;
@@ -36,37 +137,45 @@ h1 {
 }
 
 /* menu  */
-.menu {
+.menu-left {
   position: fixed;
-  top: 0;
+  top: 4rem;
+  left: 0;
   bottom: 0;
   display: flex;
-  min-width: 15rem;
+  width: 15rem;
   flex-direction: column;
   background-color: var(--second-color);
   font-family: "Roboto", sans-serif;
 }
-
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .menu-item {
-  color: var(--first-color);
+  display: block;
   margin: 0 1rem;
   padding: 1rem 0 1rem 1rem;
-  font-size: 1rem;
   border-radius: 1rem;
   font-size: 1.2rem;
   font-weight: 700;
+}
+.menu-item a {
+  color: var(--first-color);
 }
 .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem;
+  letter-spacing: 1rem;
+  padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
   color: white;
 }
 .menu-item:last-child {
-  margin: auto 1rem 1.5rem;
+  margin: auto 1rem 2rem;
 }
 
 .menu-item:nth-child(3) {
@@ -131,4 +240,69 @@ h1 {
 /* button hover  */
 .btn:hover {
   opacity: 0.5;
+}
+@media screen and (max-width: 1028px) {
+  .content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .menu-icon {
+    display: flex;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 10rem;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second-color);
+  }
+  .navbar a:hover {
+    color: white;
+    letter-spacing: 0.2rem;
+    border-bottom: 0.1rem solid white;
+    transition: 0.3s;
+  }
+  .logo1 {
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    flex: 0;
+    margin: 0 0 0 2rem;
+  }
+
+  .sigres {
+    width: 70%;
+    justify-content: center;
+    column-gap: 0.5rem;
+  }
+  .menu-icon {
+    display: flex;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body {
+    margin: auto;
+  }
+  .menu-left {
+    width: 1rem;
+  }
+  .menu-left .menu-item {
+    display: none;
+  }
+  .menu-left:hover {
+    width: 10rem;
+  }
+  .menu-left:hover .menu-item {
+    display: block;
+  }
+  .logo {
+    justify-content: center;
+  }
 }
