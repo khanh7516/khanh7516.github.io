@@ -254,8 +254,8 @@ header {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 10rem;
-    height: 30vh;
+    width: 7rem;
+    height: 20vh;
     margin: 0;
     padding: 0;
     display: flex;
@@ -264,7 +264,7 @@ header {
   }
   .navbar a:hover {
     color: white;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     border-bottom: 0.1rem solid white;
     transition: 0.3s;
   }
