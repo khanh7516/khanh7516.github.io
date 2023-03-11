@@ -14,17 +14,17 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  grid-gap: 1rem;
+  max-width: 40rem;
+  max-height: 40rem;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
 }
 .container div {
   display: flex;
-  width: 12rem;
-  height: 12rem;
 }
 .container div img {
   width: 100%;
@@ -32,6 +32,8 @@ body {
   object-position: center;
   transition: 0.3s;
   border: 0.2rem solid white;
+  width: 12rem;
+  height: 12rem;
 }
 .container div img:hover {
   transform: scale(1.3);
