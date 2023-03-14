@@ -62,6 +62,8 @@ header {
   font-size: 1rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
+  border-bottom: 0.1rem solid transparent;
+  transition: 0.3s;
 }
 .navbar a:hover {
   color: var(--second-color);
@@ -213,14 +215,39 @@ header {
 .content a:hover {
   background-color: var(--second-color);
 }
-.info {
-  display: flex;
-  column-gap: 2rem;
-}
+
 .author {
   font-style: italic;
 }
-
+.large-img {
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.large-img:hover img {
+  transform: rotate(10deg);
+  scale: 1.5;
+  opacity: 0.7;
+  transition: 1s;
+}
+.large-img:hover .more {
+  height: 2rem;
+}
+.more {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #fca311;
+  color: white;
+  transition: 1s;
+  line-height: 2rem;
+}
 /* button  */
 .btn {
   display: flex;
