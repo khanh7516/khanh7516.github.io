@@ -1,0 +1,396 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --third-color: #fb8500;
+  --text-color: #5e60ce;
+  --text-color-2: #3a0ca3;
+  --background-color: #edf2f4;
+}
+
+a {
+  color: var(--background-color);
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.fa-angle-right {
+  float: right;
+}
+header {
+  background-color: var(--text-color-2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  z-index: 1000;
+}
+.logo {
+  flex: 1;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--background-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+/* menu-bar  */
+.menu-bar {
+  background-color: var(--text-color-2);
+  text-align: center;
+  height: 100%;
+}
+.menu-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-bar ul li {
+  position: relative;
+  transition: 0.5s;
+}
+.menu-bar ul li a {
+  display: block;
+  /* width: auto; */
+  padding: 1.5rem;
+}
+
+.menu-bar ul li a .fa-solid {
+  margin: 0 0.3rem;
+}
+
+.menu-bar ul li:hover {
+  background-color: var(--third-color);
+}
+
+/* sub-menu */
+
+/* sub-menu-1 */
+
+.menu-bar ul li .sub-menu-1 {
+  display: none;
+}
+
+.menu-bar ul li ul {
+  display: block;
+}
+.menu-bar ul li .sub-menu-1 ul li a {
+  width: 10rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid white;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  left: 0;
+  background-color: var(--text-color-2);
+}
+/* .sub-menu-2  */
+
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 {
+  display: none;
+}
+
+.menu-bar ul li .sub-menu-1 ul li:hover .sub-menu-2 {
+  display: block;
+  position: absolute;
+  left: 12rem;
+  top: 0;
+  border-left: 0.1rem solid white;
+  background-color: var(--text-color-2);
+}
+
+/* .sub-menu-3  */
+
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 ul li .sub-menu-3 {
+  display: none;
+}
+
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 ul li:hover .sub-menu-3 {
+  display: block;
+  position: absolute;
+  left: 12rem;
+  top: 0;
+  border-left: 0.1rem solid white;
+  background-color: var(--text-color-2);
+}
+
+.sigres {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  margin: 0 2rem;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: white;
+  background: var(--third-color);
+  height: 100%;
+  width: auto;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  transform: translate(-0.2rem, -0.2rem);
+  box-shadow: 0.2rem 0.2rem var(--background-color);
+  transition: 0.3s;
+}
+
+.register {
+  color: var(--third-color);
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem var(--third-color);
+}
+
+.button:hover {
+  transform: translate(0rem, 0rem);
+  box-shadow: 0rem 0rem var(--third-color);
+}
+/* main  */
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 85%;
+  margin: 5rem auto;
+}
+/* breadcrumds  */
+
+.breadcrumds ul {
+  display: flex;
+  list-style: none;
+}
+.breadcrumds ul li {
+  padding: 0.5rem;
+}
+.breadcrumds ul li a {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+/* h1  */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color-2);
+  font-size: 2rem;
+  height: 7rem;
+}
+
+/* body  */
+
+.body {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+/* menu dọc  */
+
+.body .menu-bar-2 ul li a {
+  display: block;
+  color: var(--text-color-2);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: var(--third-color);
+  color: white;
+  width: 10rem;
+  height: 100%;
+  border-bottom: 0.1rem solid white;
+  transition: all 0.3s;
+}
+
+.body .menu-bar-2 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body .menu-bar-2 ul li {
+  position: relative;
+}
+
+.body .menu-bar-2 ul li a:hover {
+  background-color: var(--text-color-2);
+}
+
+/* sub-menu */
+/* ẩn menu cấp 2 */
+.body .menu-bar-2 ul li ul {
+  display: none;
+}
+/* hiện menu cấp 2 khi hover vào li  */
+
+.body .menu-bar-2 ul li:hover ul {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 12rem;
+  border-left: 0.1rem solid white;
+}
+
+/* ẩn menu cấp 3 */
+.body .menu-bar-2 ul li ul li .sub-menu-3 {
+  display: none;
+}
+
+.body .menu-bar-2 ul li ul li:hover .sub-menu-3 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 12rem;
+  border-left: 0.1rem solid white;
+}
+/* product-list */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 400px;
+}
+
+.product-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem var(--text-color-2);
+}
+
+.category {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  margin: 1rem 0 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--background-color);
+  background-color: var(--third-color);
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem var(--text-color-2);
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.5rem 0;
+}
+
+.product-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-color-2);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-name:hover {
+  color: var(--background-color);
+}
+
+.price {
+  font-size: 1rem;
+  padding: 0.8rem;
+  margin: 2rem 2rem 2rem 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--background-color);
+  background-color: var(--text-color-2);
+  border-radius: 0.5rem;
+  transform: translate(-0.2rem, -0.2rem);
+  box-shadow: 0.2rem 0.2rem var(--third-color);
+}
+
+.release-date {
+  display: flex;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 500;
+  color: black;
+  margin-top: 0.5rem;
+}
+
+.about-this-game {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: black;
+  display: -webkit-box;
+  margin-bottom: 0.5rem;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* hover  */
+.product-box:hover {
+  background-color: var(--text-color-2);
+  transition: 0.5s;
+}
+.product-box:hover .hover-effect {
+  color: var(--background-color);
+  transition: 0.5s;
+}
+.product-box:hover .price {
+  background-color: var(--text-color);
+  transform: translate(0rem, 0rem);
+  box-shadow: 0rem 0rem var(--third-color);
+  transition: background-color 0.8s, transform 1s, box-shadow 1s;
+}
+.logo:hover {
+  background-color: var(--text-color-2);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1.5rem;
+  background-color: var(--text-color-2);
+  border-radius: 1.5rem;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+/* button hover  */
+.btn:hover {
+  opacity: 0.7;
+}
