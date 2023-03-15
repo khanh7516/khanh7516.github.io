@@ -370,11 +370,8 @@ header {
   box-shadow: 0rem 0rem var(--third-color);
   transition: background-color 0.8s, transform 1s, box-shadow 1s;
 }
-.logo:hover {
-  background-color: var(--text-color-2);
-}
 
-.btn {
+/* .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,7 +387,7 @@ header {
   text-transform: uppercase;
   transition: 0.3s;
 }
-/* button hover  */
+button hover 
 .btn:hover {
   opacity: 0.7;
-}
+} */
