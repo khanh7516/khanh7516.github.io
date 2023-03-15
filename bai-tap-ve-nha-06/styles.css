@@ -23,11 +23,7 @@ body {
   column-gap: 0.5rem;
   row-gap: 0.5rem;
 }
-.container div {
-  display: flex;
-}
 .container div img {
-  width: 100%;
   object-fit: cover;
   object-position: center;
   transition: 0.3s;
