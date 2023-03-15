@@ -16,6 +16,11 @@ body {
   --background-color: #edf2f4;
 }
 
+::selection {
+  background-color: var(--third-color);
+  color: white;
+}
+
 a {
   color: var(--background-color);
   text-decoration: none;
@@ -81,6 +86,7 @@ header {
 
 .menu-bar ul li .sub-menu-1 {
   display: none;
+
 }
 
 .menu-bar ul li ul {
