@@ -194,18 +194,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   color: var(--text-color-2);
-  font-size: 2.5rem;
-  height: 15rem;
+  font-size: 1.5rem;
+  height: 5rem;
 }
 
 /* body  */
 
 .body {
   display: flex;
+  flex-direction: column;
   margin-top: 2rem;
   justify-content: space-between;
+  position: relative;
 }
 
 /* menu dọc  */
@@ -225,7 +226,8 @@ header {
 }
 
 .body .menu-bar-2 ul {
-  position: fixed;
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -273,7 +275,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   row-gap: 2rem;
-  margin: 0 0 0 8.5rem;
+  margin-left: 8.5rem;
 }
 
 .product-box {
@@ -315,7 +317,7 @@ header {
 }
 
 .product-name {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--text-color-2);
