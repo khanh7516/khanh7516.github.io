@@ -45,6 +45,7 @@ header {
   background-color: var(--first-color);
   border-bottom: 0.2rem solid var(--second-color);
   font-family: "Roboto", sans-serif;
+  z-index: 1000;
 }
 .navbar {
   display: flex;
