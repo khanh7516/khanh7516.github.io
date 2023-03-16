@@ -8,3 +8,4 @@
 [Homework 5](https://khanh7516.github.io/bai-tap-ve-nha-05/)  
 [Homework 6](https://khanh7516.github.io/bai-tap-ve-nha-06/)  
 [Homework 7](https://khanh7516.github.io/bai-tap-ve-nha-07/)
+[BKT](https://khanh7516.github.io/bai-kiem-tra/)
