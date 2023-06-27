@@ -151,7 +151,7 @@ let sumNumber = () => {
 console.log(sumNumber());
 
 //Bài 5
-let vOfglobular = (r) => 3/4 * r * r * r * 3.14;
+let vOfglobular = (r) => Math.round((3/4 * r **3 * Math.PI) * 100) / 100;
 console.log(vOfglobular(2))
 
 //Bài 6
