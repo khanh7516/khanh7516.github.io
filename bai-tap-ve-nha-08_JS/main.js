@@ -10,9 +10,9 @@ let calculateFactorial = (num) => {
 console.log("Bài 1")
 //Tính giai thừa của 5 -> Kết quả: 120
 console.log(`Giai thừa của 5 là ${calculateFactorial(5)}`); 
-//Tính giai thừa của 0 -> Kết quả: 1
-console.log(`Giai thừa của 1 là ${calculateFactorial(1)}`);
 //Tính giai thừa của 1 -> Kết quả: 1
+console.log(`Giai thừa của 1 là ${calculateFactorial(1)}`);
+//Tính giai thừa của 0 -> Kết quả: 1
 console.log(`Giai thừa của 0 là ${calculateFactorial(0)}`);
 //Tính giai thừa của 8 -> Kết quả:  40320
 console.log(`Giai thừa của 8 là ${calculateFactorial(8)}`); 
