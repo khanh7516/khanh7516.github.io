@@ -7,6 +7,7 @@ let calculateFactorial = (num) => {
   }
   return result;
 }
+console.log("Bài 1")
 //Tính giai thừa của 5 -> Kết quả: 120
 console.log(`Giai thừa của 5 là ${calculateFactorial(5)}`); 
 
@@ -20,6 +21,7 @@ let reverseString = (str) => {
 
   return result;
 }
+console.log("Bài 2")
 //"olleh" là chuỗi đảo ngược của chuỗi "hello"
 console.log(`Chuối đảo ngược của chuỗi "hello" là ${reverseString("hello")}`); 
 
@@ -56,6 +58,7 @@ let translate = (countryCode) => {
 
   return message;
 }
+console.log("Bài 3")
 //In ra kết quả tương ứng với các mã quốc gia
 console.log(`Câu chào của nước Việt Nam: ${translate("VN")}`);
 console.log(`Câu chào của nước Anh: ${translate("EN")}`);
@@ -77,7 +80,7 @@ let subString = (str) => {
 
   } else return "Chuỗi không đạt yêu cầu";
 }
-
+console.log("Bài 4")
 console.log(subString("xinchaocacbandenvoiTechmaster")) //Kết quả: xinchaocac...
 console.log(subString("68945678910111212")) //Kết quả: 6894567891...
 console.log(subString("6894")) //Kết quả: Chuỗi không đạt yêu cầu
