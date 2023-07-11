@@ -45,7 +45,7 @@ function handleMoreBoxClick() {
 }
 
 //Tạo 5 box ban đầu
-handleMoreBoxClick()
+handleMoreBoxClick();
 
 // Gán sự kiện click cho các box hiện có
 document.querySelectorAll('.box').forEach(box => {
