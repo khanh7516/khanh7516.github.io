@@ -1,0 +1,14 @@
+span {
+    display: inline-block;
+    width: 15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 2rem;
+
+  }
+
+.checked {
+    color: red;
+    text-decoration: line-through;
+}
