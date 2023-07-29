@@ -1,4 +1,3 @@
-// main.js
 const quizes = [
     {
         id: 1,
