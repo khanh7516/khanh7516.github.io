@@ -56,9 +56,9 @@ const handleButtonClick = async (resource, btn) => {
     }
 };
 //gán sự kiện cho các button
-postsBtn.addEventListener("click", async() => await handleButtonClick("posts", postsBtn));
-albumsBtn.addEventListener("click", async() => await handleButtonClick("albums", albumsBtn));
-photosBtn.addEventListener("click", async() => await handleButtonClick("photos", photosBtn));
+postsBtn.addEventListener("click", () =>  handleButtonClick("posts", postsBtn));
+albumsBtn.addEventListener("click", () =>  handleButtonClick("albums", albumsBtn));
+photosBtn.addEventListener("click", () =>  handleButtonClick("photos", photosBtn));
 
 //khi vừa vào trang (mặc định hiển thị posts)
 handleButtonClick("posts", postsBtn);
