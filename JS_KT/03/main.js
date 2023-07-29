@@ -6,17 +6,6 @@ const dataList = document.getElementById("dataList");
 
 const API_URL = "https://jsonplaceholder.typicode.com/"; 
 
-//hàm fetch dữ liệu từ API
-const fetchData = async (resource) => {
-    try {
-        const response = await axios (API_URL + resource);
-        // console.log(response);
-        return response.data;
-    } catch (error) {
-        console.log("Error fetching data:", error);
-    }
-};
-
 //hàm set text H1 tương ứng với dữ liệu được lấy
 const setTextH1 = (resourse) => {
     headText.textContent = `Type : ${resourse}`;
@@ -49,8 +38,8 @@ const setActiveButton = (activeBtn) => {
 //hàm handle thực hiện khi 1 button được click
 const handleButtonClick = async (resource, btn) => {
     try {
-        const [data, _] = await Promise.all([fetchData(resource), setTextH1(resource), setActiveButton(btn)]); //thực hiện song song các hành động không liên quan
-        renderData(data); //render data sau khi fetch
+        const [dataAPI, _] = await Promise.all([axios(API_URL + resource), setTextH1(resource), setActiveButton(btn)]); //thực hiện song song các hành động không liên quan
+        renderData(dataAPI.data); //render data sau khi fetch
     } catch (error) {
         console.log("Error fetching data:", error);
     }
