@@ -72,8 +72,8 @@ function renderLinkOrP(selectedDogType) {
 
 async function fetchData() {
   try {
-    let res = await axios('https://dog.ceo/api/breeds/list/all');
-    return res.data.message;
+    let res = await axios( "https://jsonplaceholder.typicode.com/post");
+    return res;
   } catch (error) {
     console.log("Error occurred:", error);
     return null;

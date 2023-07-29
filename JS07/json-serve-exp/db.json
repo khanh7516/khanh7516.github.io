@@ -1,0 +1,66 @@
+{
+  "todos": [
+    {
+      "title": "Đức",
+      "status": true,
+      "id": 1
+    },
+    {
+      "title": "Anh",
+      "status": true,
+      "id": 3
+    },
+    {
+      "title": "K",
+      "status": true,
+      "id": 4
+    },
+    {
+      "title": "Đức",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "BÌnh",
+      "status": true,
+      "id": 6
+    },
+    {
+      "title": "Đức",
+      "status": false,
+      "id": 7
+    },
+    {
+      "title": "N",
+      "status": false,
+      "id": 8
+    },
+    {
+      "title": "K",
+      "status": false,
+      "id": 9
+    },
+    {
+      "title": "KKK",
+      "status": false,
+      "id": 10
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
