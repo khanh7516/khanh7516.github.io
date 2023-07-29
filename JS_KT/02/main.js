@@ -17,12 +17,13 @@ const quizes = [
     },
 ];
 
-const quizContainer = document.querySelector(".quiz-container");
+const quizContainer = document.querySelector(".quiz-container");   
 const randomAnswerBtn = document.getElementById("btn");
 
 const renderQuizzes = () => {
-    quizContainer.innerHTML = "";
+    quizContainer.innerHTML = ""; 
     quizes.forEach((quiz) => {
+        //tạo và thêm các element dựa trên cấu trúc file html
         const quizItem = document.createElement("div");
         quizItem.classList.add("quiz-item");
 
@@ -38,7 +39,7 @@ const renderQuizzes = () => {
 
             const input = document.createElement("input");
             input.type = "radio";
-            input.name = quiz.id; 
+            input.name = quiz.id; //câu trả lời có cùng 1 question sẽ có name giống nhau
             const label = document.createElement("label");
             label.textContent = answer;
 
@@ -55,16 +56,16 @@ const renderQuizzes = () => {
     });
 };
 
-
+//thêm sự kiện click cho nút random
 randomAnswerBtn.addEventListener("click", () => {
     quizes.forEach((quiz) => {
-        const randomIndex = Math.floor(Math.random() * quiz.answers.length);
-        const radioInputs = document.querySelectorAll(`input[name="${quiz.id}"]`);
+        const randomIndex = Math.floor(Math.random() * quiz.answers.length);         //giá trị random trong khoảng số lượng câu trả lời của từng quiz
+        const radioInputs = document.querySelectorAll(`input[name="${quiz.id}"]`);   //chọn tất cả các input đáp án
 
-        radioInputs[randomIndex].checked = true;
+        radioInputs[randomIndex].checked = true;                                     //set giá trị input của câu trả lời với số random tương ứng
     });
 });
 
 
-renderQuizzes();
+renderQuizzes(); //render các element khi load trang
 
