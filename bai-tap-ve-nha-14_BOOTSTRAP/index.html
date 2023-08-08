@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #e5e5e5;
+      }
+      .container-md {
+        max-width: 1200px;
+        padding-bottom: 4rem;
+      }
+      .up {
+        padding: 1rem 5rem 2rem;
+      }
+
+      .do {
+        padding: 2rem 5rem 2rem;
+      }
+
+      .first-para {
+        margin-bottom: 5rem;
+      }
+      .container-fluid {
+        width: 70%;
+      }
+      #navbarNav {
+        display: flex;
+        justify-content: flex-end;
+      }
+      h1 {
+        font-weight: 500;
+        font-size: 4rem;
+        color: #f12c0e;
+      }
+      .main-para {
+        width: 60%;
+        margin: auto;
+      }
+
+      .container-md a {
+        text-decoration: none;
+      }
+      .container-md img {
+        width: 255px;
+        min-height: 249px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .card {
+        padding: 30px;
+        border-radius: 0;
+        margin: auto;
+        display: flex;
+      }
+      .col-md-6 {
+        border-radius: 0;
+      }
+
+      .fw-bold {
+        margin-bottom: 2rem;
+        color: #f12c0e;
+        font-size: 1.4rem;
+      }
+      .btn {
+        background-color: #e5e5e5;
+        border-radius: 0;
+        color: #111111;
+      }
+      #active {
+        color: red;
+      }
+
+      @media (max-width: 1000px) {
+        .card-body {
+          width: 205px;
+        }
+        .card {
+          display: flex;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .card {
+          width: 340px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="//images03.nicepage.com/c461c07a441a5d220e8feb1a/5efce3688b475c0cbd90a8c8/bc8c8a15-0879-45b1-9fbf-9949c41fc17e.png" class="u-logo-image u-logo-image-1">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="active" aria-current="page" href="#">Page 4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 6</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container-md">
+      <div class="text-center up">
+        <h1>Menu</h1>
+        <p class="fst-italic main-para">
+          Unique wood fired pizzas or be tempted by our pasta, antipasto,
+          focaccias, salads and Bruschetta dishes. Relax in the friendly
+          ambience as you enjoy the aromas of the wood ovens or sit al fresco
+          and soak up the Mildura sunshine.
+        </p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-1">
+        <div class="col">
+          <div class="card mb-3" style="max-width: 570px">
+            <div class="row row-cols-sm-2 g-0">
+              <div class="col-md-7">
+                <img
+                  src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/910bd281016d57a199450c15/3981417.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h3 class="card-title">Original</h3>
+                  <p class="card-text fst-italic">Tomato sauce, mozzarella & oregano</p>
+                  <h6 class="card-text fw-bold">$18.00</h6>
+                  <button type="button" class="card-text btn btn-secondary">
+                    ADD TO CARD
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 570px">
+            <div class="row row-cols-sm-2 g-0">
+              <div class="col-md-7">
+                <img
+                  src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/6d842bd1e6e354edb2a8baed/pizza-dark-background-classic-italian-pizza-with-tomatoes-pepper-vegetables-sauce-mozarella-cheese-dark-kitchen-table-copy-space_90380-947.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h3 class="card-title">Salami</h3>
+                  <p class="card-text fst-italic">
+                    Tomato sauce, mozzarella & mild salami
+                  </p>
+                  <h6 class="card-text fw-bold">$18.00</h6>
+                  <button type="button" class="card-text btn btn-secondary">
+                    ADD TO CARD
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 570px">
+            <div class="row row-cols-sm-2 g-0">
+              <div class="col-md-7">
+                <img
+                  src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d087beea5e3b5475974ecfe1/mixed-pizza-with-olive-bell-pepper-tomato_140725-183.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h3 class="card-title">Chicken</h3>
+                  <p class="card-text fst-italic">
+                    Tomato sauce, mozzarella, chicken, pineapple* & bbq sauce
+                  </p>
+                  <h6 class="card-text fw-bold">$18.00</h6>
+                  <button type="button" class="card-text btn btn-secondary">
+                    ADD TO CARD
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 570px">
+            <div class="row row-cols-sm-2 g-0">
+              <div class="col-md-7">
+                <img
+                  src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/457320aab346570eb0d91acd/sdw.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h3 class="card-title">Hawaiian</h3>
+                  <p class="card-text fst-italic">
+                    Tomato sauce, mozzarella, ham & pineapple
+                  </p>
+                  <h6 class="card-text fw-bold">$18.00</h6>
+                  <button type="button" class="card-text btn btn-secondary">
+                    ADD TO CARD
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="d-flex justify-content-center align-items-center" style="padding-top: 2rem;">
+        Images from&nbsp;<a
+          href="https://www.freepik.com/free-photos-vectors/background"
+          style="color: #f05510"
+          ><b>Freepik</b></a
+        >
+      </p>
+    </div>
+    <footer>
+        <div class="text-center do" style="background-color:#333333 ;color:white;">
+            <p class="first-para">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            <p><a href="https://nicepage.com/website-builder" style="color: #f05510;;">Template</a>&nbsp;created with&nbsp;<a href="https://nicepage.com/website-builder" style="color: #f05510;">Nicepage</a>.</p>
+        </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
